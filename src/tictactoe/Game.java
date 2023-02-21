@@ -42,11 +42,9 @@ public class Game {
         printer.fillMatrix(matrix);
         printer.printMatrix(matrix);
 
-
+        //The main loop of the application, where the input is checked each time by logic and exception handling.
         do {
             System.out.println("Enter the coordinates: (in pairs: x y)");
-
-            //The main loop of the application, where the input is checked each time by logic and exception handling.
             try {
                 String coordinatesForTable = scanner.nextLine();
 
