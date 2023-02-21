@@ -8,15 +8,15 @@ public class Checker {
     public boolean isxWins() {
         return xWins;
     }
-
     public boolean isoWins() {
         return oWins;
     }
-
     public boolean isDraw() {
         return draw;
     }
 
+    //For checkXWin, checkOWin, checkDraw
+    //Check in 2D array if any player (X or Y) won, if not return a draw.
     protected void checkXWin(String[][] matrix) {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -36,7 +36,7 @@ public class Checker {
         }
     }
 
-    protected void checkOWin(String[][] matrix){
+    protected void checkOWin(String[][] matrix) {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (
@@ -55,7 +55,7 @@ public class Checker {
         }
     }
 
-    protected void checkDraw(String[][] matrix){
+    protected void checkDraw(String[][] matrix) {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (!matrix[0][0].equals(" ") && !matrix[0][1].equals(" ") && !matrix[0][2].equals(" ") && !matrix[1][1].equals(" ") && !matrix[1][2].equals(" ") && !matrix[2][0].equals(" ") && !matrix[2][1].equals(" ") && !matrix[2][2].equals(" ")) {
